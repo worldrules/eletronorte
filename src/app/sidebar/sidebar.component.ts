@@ -9,14 +9,27 @@ export interface RouteInfo {
 }
 
 export const ROUTES: RouteInfo[] = [
-    { path: '/dashboard',     title: 'Dashboard',         icon:'nc-bank',       class: '' },
-    { path: '/icons',         title: 'Icons',             icon:'nc-diamond',    class: '' },
-    { path: '/maps',          title: 'Maps',              icon:'nc-pin-3',      class: '' },
-    { path: '/notifications', title: 'Notifications',     icon:'nc-bell-55',    class: '' },
+    { path: '/principal',     title: 'Principal',         icon:'nc-bank',       class: '' },
+
+    /*
+    { path: '/atribuicao',     title: 'Atribuição Organizacional',         icon:'nc-bank',       class: '' },
+    { path: '/dadosPessoais',     title: 'Dados Pessoais',         icon:'nc-bank',       class: '' },
+    { path: '/endereço',     title: 'Endereço',         icon:'nc-bank',       class: '' },
+    { path: '/deficiencia',     title: 'Deficiência',         icon:'nc-bank',       class: '' },
+    { path: '/documentos',     title: 'Documentos',         icon:'nc-bank',       class: '' },
+    { path: '/dadosBancarios',     title: 'Dados Bancários',         icon:'nc-bank',       class: '' },
+    { path: '/familia',     title: 'Familia/Pessoa de Referência',         icon:'nc-bank',       class: '' },
+    { path: '/contrato',     title: 'Elementos do Contrato',         icon:'nc-bank',       class: '' },
+    { path: '/aposentadoria',     title: 'Aposentadoria',         icon:'nc-bank',       class: '' },
+    { path: '/formacao',     title: 'Formaçao Educacional',         icon:'nc-bank',       class: '' },
+    { path: '/dadosInternos',     title: 'Dados Internos da Empresa',         icon:'nc-bank',       class: '' },
+    { path: '/mudeAquiParaCriarNovaRota',     title: 'mudeAquiParaCriarNovaRota',         icon:'nc-bank',       class: '' },
+
+
+
+    */
     { path: '/user',          title: 'Cadastrar',      icon:'nc-single-02',  class: '' },
-    { path: '/table',         title: 'Table List',        icon:'nc-tile-56',    class: '' },
-    { path: '/typography',    title: 'Typography',        icon:'nc-caps-small', class: '' },
-    { path: '/upgrade',       title: 'Upgrade to PRO',    icon:'nc-spaceship',  class: 'active-pro' },
+
 ];
 
 @Component({
