@@ -12,4 +12,8 @@ export class DeficienciaComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  anexaDeficiencia() {
+    alert('Anexar Deficiência')
+  }
 }

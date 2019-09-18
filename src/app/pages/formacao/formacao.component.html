@@ -1,1 +1,88 @@
-<p>formacao works!</p>
+<div class="row">
+    <div class="col-md-12">
+      <div class="card card-user">
+        <div class="card-header">
+          <h5 class="card-title">Formação Educacional</h5>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-3 pr-1">
+              <div class="form-group">
+                <label>Tipo do Estabelecimento</label>
+                <input type="text" class="form-control" placeholder="Insira o tipo do estabelecimento" />
+              </div>
+            </div>
+            <div class="col-md-2 pr-1">
+              <div class="form-group">
+                <label>Formação</label>
+                <input type="text" class="form-control" placeholder="Qual seu formação ?" />
+              </div>
+            </div>
+            <div class="col-md-2 pr-1">
+              <div class="form-group">
+                <label>Grupo de Formação</label>
+                <input type="text" class="form-control" placeholder="Qual o grupo ?" />
+              </div>
+            </div>
+
+            <div class="col-md-2 pr-1">
+              <div class="form-group">
+                <label>Instituíção</label>
+                <input type="text" class="form-control" placeholder="Nome da Instituíção" />
+              </div>
+            </div>
+            <div class="col-md-1 pr-1">
+              <div class="form-group">
+                <label>País</label>
+                <input type="text" class="form-control" placeholder="Brasil" />
+              </div>
+            </div>
+            <div class="col-md-1 pr-1">
+              <div class="form-group">
+                <label>Duração</label>
+                <input type="text" class="form-control" placeholder="3 anos" />
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-11 pr-1">
+              <div class="form-group">
+                <label>Especialização 1</label>
+                <input type="text" class="form-control" placeholder="Especialização em engenharia de software" />
+              </div>
+            </div>
+            <div class="col-md-1 pr-1 mt-3">
+              <div class="form-group">
+                  <button
+                  (click)="anexaEsp1()"
+                  type="button" id="anexaEsp1" class="btn btn-primary">Anexar</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-md-11 pr-1">
+                <div class="form-group">
+                  <label>Especialização 2</label>
+                  <input type="text" class="form-control" placeholder="Outra Especialização..." />
+                </div>
+              </div>
+              <div class="col-md-1 pr-1 mt-3">
+                <div class="form-group">
+                    <button
+                    (click)="anexaEsp2()"
+                    type="button" id="anexaEsp2" class="btn btn-primary">Anexar</button>
+                </div>
+              </div>
+            </div>
+          <div class="row">
+            <div class="update ml-auto mr-auto">
+              <button type="submit" class="btn btn-primary btn-round">
+                Salvar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

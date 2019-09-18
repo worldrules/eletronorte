@@ -12,4 +12,12 @@ export class FormacaoComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  anexaEsp1 () {
+    alert("Anexar Especialização 1")
+  }
+  anexaEsp2 () {
+    alert("Anexar Especialização 2")
+
+  }
 }

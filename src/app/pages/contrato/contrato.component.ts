@@ -12,4 +12,11 @@ export class ContratoComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  anexaAposentadoria() {
+    alert('Anexar aposentadoria')
+  }
+  anexaGrau() {
+    alert('Anexar Grau de Escolaridade')
+  }
 }

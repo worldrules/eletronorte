@@ -1,1 +1,42 @@
-<p>contrato works!</p>
+<div class="row">
+  <div class="col-md-12">
+    <div class="card card-user">
+      <div class="card-header">
+        <h5 class="card-title">Elementos do Contrato</h5>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-3 pr-1">
+            <div class="form-group">
+              <label>Grau de Instrução</label>
+              <input type="text" class="form-control"/>
+            </div>
+          </div>
+          <div class="col-md-1 pr-1 mt-3">
+              <button
+              (click)="anexaGrau()"
+              type="button" id="anexaGrau" class="btn btn-primary">Anexar</button>
+          </div>
+          <div class="col-md-3 pr-1">
+              <div class="form-group">
+                <label>Valor da aposentadoria</label>
+                <input type="number" class="form-control"/>
+              </div>
+            </div>
+            <div class="col-md-1 pr-1 mt-3">
+                <button
+                (click)="anexaAposentadoria()"
+                type="button" id="anexaAposentadoria" class="btn btn-primary">Anexar</button>
+            </div>
+
+        </div>
+          <div class="row">
+            <div class="update ml-auto mr-auto">
+              <button type="submit" class="btn btn-primary btn-round">
+                Salvar
+              </button>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
