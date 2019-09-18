@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+import { AuthService } from './../../pages/login/auth.service';
 
 @Component({
   selector: 'app-admin-layout',
@@ -7,6 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin-layout.component.scss']
 })
 export class AdminLayoutComponent implements OnInit {
+  mostrarMenu: boolean = false;
 
-  ngOnInit() { }
+
+  constructor(private authService: AuthService) {
+
+  }
+
+  ngOnInit() {
+
+    //Método para esconder o nav se não estiver logado
+    this.authService.mostrarMenuEmitter.subscribe(
+      mostrar => this.mostrarMenu = mostrar
+    );
+
+    console.log(this.mostrarMenu);
+   }
 }
