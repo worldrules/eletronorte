@@ -3,6 +3,7 @@ import { ROUTES } from '../../sidebar/sidebar.component';
 import { Router } from '@angular/router';
 import { Location} from '@angular/common';
 
+import { AuthService } from './../../pages/login/auth.service';
 @Component({
     moduleId: module.id,
     selector: 'navbar-cmp',
@@ -19,23 +20,29 @@ export class NavbarComponent implements OnInit{
     public isCollapsed = true;
     @ViewChild("navbar-cmp", {static: false}) button;
 
-    constructor(location:Location, private renderer : Renderer, private element : ElementRef, private router: Router) {
+    constructor(
+      private authService : AuthService,
+      location:Location, private renderer : Renderer, private element : ElementRef, private router: Router) {
         this.location = location;
         this.nativeElement = element.nativeElement;
         this.sidebarVisible = false;
     }
 
-    ngOnInit(){
+    ngOnInit() {
         this.listTitles = ROUTES.filter(listTitle => listTitle);
         var navbar : HTMLElement = this.element.nativeElement;
         this.toggleButton = navbar.getElementsByClassName('navbar-toggle')[0];
         this.router.events.subscribe((event) => {
           this.sidebarClose();
-       });
+
+
+        });
+
     }
-    getTitle(){
+
+    getTitle() {
       var titlee = this.location.prepareExternalUrl(this.location.path());
-      if(titlee.charAt(0) === '#'){
+      if (titlee.charAt(0) === '#') {
           titlee = titlee.slice( 1 );
       }
       for(var item = 0; item < this.listTitles.length; item++){
