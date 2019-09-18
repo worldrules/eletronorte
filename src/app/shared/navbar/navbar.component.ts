@@ -91,5 +91,8 @@ export class NavbarComponent implements OnInit{
         }
 
       }
-
+  redirect() {
+    this.router.navigate(['login'])
+    console.log("Desloguei");
+  }
 }

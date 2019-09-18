@@ -20,12 +20,10 @@
     <div class="collapse navbar-collapse justify-content-end" id="collapseExample" [ngbCollapse]="isCollapsed">
       <ul class="navbar-nav">
         <li class="nav-item">
-          
             <p class="mt-2 mr-1">Usuário Logado</p>
-          
         </li>
         <li class="nav-item">
-          <a class="nav-link btn-magnify" href="">
+          <a style="cursor: pointer" class="nav-link btn-magnify" (click)="redirect()">
             <p>Logout</p>
           </a>
         </li>
