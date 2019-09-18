@@ -1,1 +1,80 @@
-<p>dados-pessoais works!</p>
+<div class="row">
+  <div class="col-md-12">
+    <div class="card card-user">
+      <div class="card-header">
+        <h5 class="card-title">Dados Pessoais</h5>
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="row">
+            <div class="col-md-4 pr-1">
+              <div class="form-group">
+                <label>Nome Completo</label>
+                <input type="text" class="form-control" placeholder="Insira o nome completo">
+                <button
+                (click)="anexaNome()"
+                type="button" id="anexoNome" class="btn btn-primary">Anexar</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2 pr-1">
+              <div class="form-group">
+                <label>Estado Civil</label>
+                <select type="text" class="form-control" placeholder="Qual seu estado civil ?">
+                  <option value="solteiro">Solteiro(a)</option>
+                  <option value="casado">Casado(a)</option>
+                  <option value="divorciado">Divorciado(a)</option>
+                  <option value="viuvo">Viúvo(a)</option>
+                  <option value="separado">Separado(a)</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-2 pl-5">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Raça / Etnia</label>
+                <select type="raca" class="form-control" placeholder="Qual sua classificação de ordem social ?">
+                  <option value="branco">Branco</option>
+                  <option value="negro">Negro</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Endereço</label>
+                <input type="text" class="form-control" placeholder="Home Address" value="Melbourne, Australia">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 pr-1">
+              <div class="form-group">
+                <label>Cidade</label>
+                <input type="text" class="form-control" placeholder="City" value="Melbourne">
+              </div>
+            </div>
+            <div class="col-md-4 px-1">
+              <div class="form-group">
+                <label>País</label>
+                <input type="text" class="form-control" placeholder="Country" value="Australia">
+              </div>
+            </div>
+            <div class="col-md-4 pl-1">
+              <div class="form-group">
+                <label>CEP</label>
+                <input type="number" class="form-control" placeholder="ZIP Code">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="update ml-auto mr-auto">
+              <button type="submit" class="btn btn-primary btn-round">Salvar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

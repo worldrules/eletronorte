@@ -12,4 +12,7 @@ export class DadosPessoaisComponent implements OnInit {
   ngOnInit() {
   }
 
+  anexaNome() {
+    alert('Anexar arquivo apertado');
+  }
 }
