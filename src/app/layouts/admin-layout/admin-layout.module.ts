@@ -21,6 +21,7 @@ import { ContratoComponent } from 'app/pages/contrato/contrato.component';
 import { AposentadoriaComponent } from 'app/pages/aposentadoria/aposentadoria.component';
 import { FormacaoComponent } from 'app/pages/formacao/formacao.component';
 import { DadosInternosComponent } from 'app/pages/dados-internos/dados-internos.component';
+import { LoginComponent } from 'app/pages/login/login.component';
 
 @NgModule({
   imports: [
@@ -42,7 +43,8 @@ import { DadosInternosComponent } from 'app/pages/dados-internos/dados-internos.
     ContratoComponent,
     AposentadoriaComponent,
     FormacaoComponent,
-    DadosInternosComponent
+    DadosInternosComponent,
+    LoginComponent
   ]
 })
 

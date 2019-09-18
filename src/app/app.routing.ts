@@ -18,5 +18,5 @@ export const AppRoutes: Routes = [
   {
     path: '**',
     redirectTo: 'principal'
-  }
+  },
 ]

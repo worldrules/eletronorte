@@ -13,6 +13,7 @@ import { ContratoComponent } from 'app/pages/contrato/contrato.component';
 import { AposentadoriaComponent } from 'app/pages/aposentadoria/aposentadoria.component';
 import { FormacaoComponent } from 'app/pages/formacao/formacao.component';
 import { DadosInternosComponent } from 'app/pages/dados-internos/dados-internos.component';
+import { LoginComponent } from 'app/pages/login/login.component';
 
 
 export const AdminLayoutRoutes: Routes = [
@@ -29,5 +30,6 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'formacao',           component: FormacaoComponent },
     { path: 'dadosInternos',           component: DadosInternosComponent },
     { path: 'user',           component: UserComponent },
+    { path: 'login',           component: LoginComponent },
 
 ];
