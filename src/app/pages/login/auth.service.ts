@@ -22,6 +22,7 @@ export class AuthService {
       this.router.navigate(['principal']);
     } else {
       this.autenticado = false;
+      this.router.navigate(['login']);
 
     }
 
