@@ -10,8 +10,8 @@ export interface RouteInfo {
 
 export const ROUTES: RouteInfo[] = [
     { path: '/principal',     title: 'Principal',         icon:'nc-bank',       class: '' },
-    { path: '/atribuicao',     title: 'Atribuição Organizacional',         icon:'nc-bullet-list-67',       class: '' },
     { path: '/dadosPessoais',     title: 'Dados Pessoais',         icon:'nc-bullet-list-67',       class: '' },
+    { path: '/atribuicao',     title: 'Atribuição Organizacional',         icon:'nc-bullet-list-67',       class: '' },
     { path: '/endereco',     title: 'Endereço',         icon:'nc-bullet-list-67',       class: '' },
     { path: '/deficiencia',     title: 'Deficiência',         icon:'nc-bullet-list-67',       class: '' },
     { path: '/documentos',     title: 'Documentos',         icon:'nc-bullet-list-67',       class: '' },

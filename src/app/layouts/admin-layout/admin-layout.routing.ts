@@ -18,8 +18,8 @@ import { LoginComponent } from 'app/pages/login/login.component';
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'principal',      component: PrincipalComponent },
-    { path: 'atribuicao',           component: AtribuicaoComponent },
     { path: 'dadosPessoais',           component: DadosPessoaisComponent },
+    { path: 'atribuicao',           component: AtribuicaoComponent },
     { path: 'endereco',           component: EnderecoComponent },
     { path: 'deficiencia',           component: DeficienciaComponent },
     { path: 'documentos',           component: DocumentosComponent },
