@@ -5,19 +5,18 @@
         <h5 class="card-title">Endereço</h5>
       </div>
       <div class="card-body">
-        <form >
+        <form [formGroup]="formulario">
           <div class="row">
             <div class="col-md-2">
               <div class="form-group">
                 <label>Código Postal / CEP</label>
                 <input
                   [(ngModel)]="cep"
+                  formControlName="cep"
                   type="text"
                   class="form-control"
                   placeholder="Digite o CEP"
-                  name=cep
-                  (focusout)="consultarCEP()"
-                  (keydown.enter)="consultarCEP()"
+                  (blur)="consultarCEP()"
                 />
               </div>
             </div>
@@ -26,13 +25,13 @@
             <div class="col-md-5">
               <div class="form-group">
                 <label>Cidade</label>
-                <input [ngModel]="cidade" type="text" class="form-control" readonly name="cidade"/>
+                <input formControlName="cidade" [ngModel]="cidade" type="text" class="form-control" readonly />
               </div>
             </div>
             <div class="col-md-5">
               <div class="form-group">
                 <label>Bairro</label>
-                <input [ngModel]="bairro" type="text" class="form-control" name="bairro" readonly />
+                <input [ngModel]="bairro" type="text" class="form-control" formControlName="bairro" readonly />
               </div>
             </div>
           </div>
@@ -41,10 +40,10 @@
                 <div class="form-group">
                   <label>Rua</label>
                   <input
-                    [ngModel]="rua" 
+                    [ngModel]="rua"
                     type="text"
                     class="form-control"
-                    name="rua"
+                    formControlName="rua"
                     readonly
                   />
                 </div>
@@ -57,7 +56,7 @@
                       type="text"
                       class="form-control"
                       placeholder="Complemento..."
-                      name="complemento"
+                      formControlName="complemento"
                     />
                   </div>
                 </div>
@@ -69,7 +68,7 @@
                     type="text"
                     class="form-control"
                     placeholder="Número..."
-                    name="numero"
+                    formControlName="numero"
                   />
                 </div>
               </div>
@@ -78,13 +77,13 @@
             <div class="col-md-5 ">
               <div class="form-group">
                 <label>Chave do País</label>
-                <input [(ngModel)]="chavePais" type="text" class="form-control" name="chavePais"/>
+                <input [(ngModel)]="chavePais" type="text" class="form-control" formControlName="chavePais"/>
               </div>
             </div>
             <div class="col-md-5 ">
               <div class="form-group">
                 <label>Região</label>
-                <input [(ngModel)]="regiao" type="text" class="form-control" name="regiao"/>
+                <input [(ngModel)]="regiao" type="text" class="form-control" formControlName="regiao"/>
               </div>
             </div>
           </div>
@@ -92,13 +91,13 @@
             <div class="col-md-3 ">
               <div class="form-group">
                 <label>Comunicação/Telefone(s)</label>
-                <input [(ngModel)]="comunicao" type="text" class="form-control" name="comunicao"/>
+                <input [(ngModel)]="comunicao" type="text" class="form-control" formControlName="comunicacao"/>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="update ml-auto mr-auto">
-              <button type="submit" class="btn btn-primary btn-round">
+              <button type="submit" class="btn btn-primary btn-round" (click)="testValidade()" [disabled]="!formulario.valid">
                 Salvar
               </button>
             </div>
