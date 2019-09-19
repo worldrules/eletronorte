@@ -21,7 +21,7 @@ export const ROUTES: RouteInfo[] = [
     { path: '/aposentadoria',     title: 'Aposentadoria',         icon:'nc-minimal-right',       class: '' },
     { path: '/formacao',     title: 'Formaçao Educacional',         icon:'nc-hat-3',       class: '' },
     { path: '/dadosInternos',     title: 'Dados Internos da Empresa',         icon:'nc-briefcase-24',       class: '' },
-    { path: '/user',          title: 'Cadastrar',      icon:'nc-badge',  class: '' },
+    // { path: '/user',          title: 'Cadastrar',      icon:'nc-badge',  class: '' },
     // { path: '/mudeAquiParaCriarNovaRota',     title: 'mudeAquiParaCriarNovaRota',         icon:'nc-minimal-right',       class: '' },
 
 
