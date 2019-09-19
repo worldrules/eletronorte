@@ -9,7 +9,7 @@ import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms'
 })
 export class EnderecoComponent implements OnInit {
   formulario = this.formBuilder.group({
-    cep: ['', [Validators.required,  Validators.pattern('/^[0-9]{8}$/')]],
+    cep: ['', Validators.compose([Validators.required, Validators.pattern('^[0-9]{8}$')])],
     rua: [''],
     numero: [''],
     cidade: [''],

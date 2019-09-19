@@ -5,7 +5,7 @@
         <h5 class="card-title">Endereço</h5>
       </div>
       <div class="card-body">
-        <form [formGroup]="formulario">
+        <form [formGroup]="formulario" (ngSubmit)="testValidade()">
           <div class="row">
             <div class="col-md-2">
               <div class="form-group">
@@ -97,7 +97,7 @@
           </div>
           <div class="row">
             <div class="update ml-auto mr-auto">
-              <button type="submit" class="btn btn-primary btn-round" (click)="testValidade()" [disabled]="!formulario.valid">
+              <button type="submit" class="btn btn-primary btn-round" [disabled]="!formulario.valid">
                 Salvar
               </button>
             </div>
