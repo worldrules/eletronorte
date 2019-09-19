@@ -1,0 +1,52 @@
+
+<div class="row">
+    <div class="col-md-12">
+      <div class="card card-user">
+        <div class="card-header">
+          <h5 class="card-title">Deficiência</h5>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="container">
+                <fieldset>
+                    <legend><small>Possui Deficiência?</small></legend>
+                    <div class="form-check form-check-inline">
+                      <input type="checkbox" id="sim" value="s">
+                      <label class="form-check-label pl-1" >Sim</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="nao" value="n">
+                      <label class="form-check-label pl-1" >Não</label>
+                    </div>
+                  </fieldset>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 pr-1">
+              <label for="">Observações</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-1 pr-1 mt-3">
+              <button
+                (click)="anexaDeficiencia()"
+                type="button"
+                id="anexaDeficiencia"
+                class="btn btn-primary"
+              >
+                Anexar
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="update ml-auto mr-auto">
+              <button type="submit" class="btn btn-primary btn-round">
+                Salvar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

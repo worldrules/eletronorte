@@ -1,0 +1,110 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="card card-user">
+      <div class="card-header">
+        <h5 class="card-title">Endereço</h5>
+      </div>
+      <div class="card-body">
+        <form >
+          <div class="row">
+            <div class="col-md-2">
+              <div class="form-group">
+                <label>Código Postal / CEP</label>
+                <input
+                  [(ngModel)]="cep"
+                  type="text"
+                  class="form-control"
+                  placeholder="Digite o CEP"
+                  name=cep
+                  (focusout)="consultarCEP()"
+                  (keydown.enter)="consultarCEP()"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5">
+              <div class="form-group">
+                <label>Cidade</label>
+                <input [ngModel]="cidade" type="text" class="form-control" readonly name="cidade"/>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="form-group">
+                <label>Bairro</label>
+                <input [ngModel]="bairro" type="text" class="form-control" name="bairro" readonly />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-md-5">
+                <div class="form-group">
+                  <label>Rua</label>
+                  <input
+                    [ngModel]="rua" 
+                    type="text"
+                    class="form-control"
+                    name="rua"
+                    readonly
+                  />
+                </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Complemento</label>
+                    <input
+                      [(ngModel)]="complemento"
+                      type="text"
+                      class="form-control"
+                      placeholder="Complemento..."
+                      name="complemento"
+                    />
+                  </div>
+                </div>
+              <div class="col-md-2">
+                <div class="form-group">
+                  <label>Número</label>
+                  <input
+                    [(ngModel)]="numero"
+                    type="text"
+                    class="form-control"
+                    placeholder="Número..."
+                    name="numero"
+                  />
+                </div>
+              </div>
+            </div>
+          <div class="row">
+            <div class="col-md-5 ">
+              <div class="form-group">
+                <label>Chave do País</label>
+                <input [(ngModel)]="chavePais" type="text" class="form-control" name="chavePais"/>
+              </div>
+            </div>
+            <div class="col-md-5 ">
+              <div class="form-group">
+                <label>Região</label>
+                <input [(ngModel)]="regiao" type="text" class="form-control" name="regiao"/>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 ">
+              <div class="form-group">
+                <label>Comunicação/Telefone(s)</label>
+                <input [(ngModel)]="comunicao" type="text" class="form-control" name="comunicao"/>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="update ml-auto mr-auto">
+              <button type="submit" class="btn btn-primary btn-round">
+                Salvar
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

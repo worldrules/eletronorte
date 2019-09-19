@@ -1,0 +1,38 @@
+#bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+#bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+.is-invalid {
+  border: 1px solid #e87777;
+}
+
+.invalid-feedback {
+  float: right;
+  color: #e87777;
+}
+
+#logo {
+  position: relative;
+  top: 4vw;
+}
+#cardPrincipal {
+  border-radius: 25px;
+  max-width: 370px;
+  position: relative;
+  right: 4vw;
+}
