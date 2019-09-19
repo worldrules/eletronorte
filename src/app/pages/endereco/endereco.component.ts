@@ -15,7 +15,7 @@ export class EnderecoComponent implements OnInit {
   complemento:any;
   chavePais:any;
   regiao:any;
-  comunicacao;
+  comunicacao: any;
 
   constructor(private http: HttpClient) { }
 
@@ -32,9 +32,9 @@ export class EnderecoComponent implements OnInit {
           this.cidade = dados.localidade
           this.rua = dados.logradouro
           this.bairro = dados.bairro
-        }); 
+        });
       }
     }
   }
-  
+
 }
