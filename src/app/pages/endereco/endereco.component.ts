@@ -6,6 +6,7 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './endereco.component.html',
   styleUrls: ['./endereco.component.scss']
 })
+
 export class EnderecoComponent implements OnInit {
   @Input()  cep: any;
   rua:any;
