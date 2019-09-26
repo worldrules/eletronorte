@@ -7,6 +7,7 @@ import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms'
   templateUrl: './endereco.component.html',
   styleUrls: ['./endereco.component.scss']
 })
+
 export class EnderecoComponent implements OnInit {
   formulario = this.formBuilder.group({
     cep: ['', Validators.compose([Validators.required, Validators.pattern('^[0-9]{8}$')])],
@@ -27,7 +28,7 @@ export class EnderecoComponent implements OnInit {
   complemento:any;
   chavePais:any;
   regiao:any;
-  comunicacao:any;
+  comunicacao: any;
 
   constructor(private http: HttpClient, private formBuilder: FormBuilder) { }
 

@@ -12,4 +12,8 @@ export class AposentadoriaComponent implements OnInit {
   ngOnInit() {
   }
 
+  anexaAposentadoria() {
+
+  }
+
 }

@@ -10,7 +10,9 @@
             <div class="col-md-5 pr-1">
               <div class="form-group">
                 <label>Nome Completo</label>
-                <input type="text" class="form-control" placeholder="Insira o nome completo">
+                <input
+                [(ngModel)]="colaborador.nome"
+                type="text" class="form-control" placeholder="Insira o nome completo">
                 <button
                 (click)="anexaNome()"
                 type="button" id="anexoNome" class="btn btn-primary">Anexar</button>
@@ -70,7 +72,9 @@
           </div>
           <div class="row">
             <div class="update ml-auto mr-auto">
-              <button type="submit" class="btn btn-primary btn-round">Salvar</button>
+              <button
+              (click)="onSubmit()"
+              type="submit" class="btn btn-primary btn-round">Salvar</button>
             </div>
           </div>
         </form>

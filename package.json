@@ -1,18 +1,27 @@
 {
-  "name": "paper-dashboard-angular",
+  "name": "eletronorte",
   "version": "2.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve -o",
+    "start": "node server.js",
+    "postinstall": "ng build --aot --prod",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
   },
+  "engines": {
+    "node": "10.16.2",
+    "npm": "6.9.0"
+  },
+
   "private": true,
   "dependencies": {
+    "@angular/cli": "8.0.4",
+    "@angular/compiler-cli": "8.0.2",
+    "typescript": "3.4.5",
     "@angular/animations": "8.0.2",
     "@angular/common": "8.0.2",
     "@angular/compiler": "8.0.2",
@@ -31,7 +40,7 @@
     "chart.js": "2.8.0",
     "chartist": "0.11.2",
     "core-js": "3.1.4",
-    "express": "4.17.1",
+    "express": "^4.17.1",
     "firebase": "^5.10.1",
     "jquery": "3.4.1",
     "moment": "2.24.0",
